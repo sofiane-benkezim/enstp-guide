@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -44,9 +44,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center space-x-3 space-x-reverse">
-                    <div class="p-1 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center">
-    <img src="images.png" alt="شعار ENSTP" class="h-12 w-auto object-contain">
-</div>
+                    <div class="bg-gradient-to-tr from-brand-900 to-brand-600 text-white p-3 rounded-2xl shadow-md">
+                        <i class="fa-solid fa-graduation-cap text-2xl"></i>
+                    </div>
                     <div>
                         <span class="text-xl font-black text-brand-900 block leading-tight" id="txt-logo-title">دليل ENSTP الشامل</span>
                         <span class="text-xs text-slate-500 font-bold" id="txt-logo-sub">المدرسة العليا للأشغال العمومية</span>
@@ -66,7 +66,7 @@
                     </nav>
 
                     <!-- Language Selector Button Group -->
-<div class="bg-slate-100 p-1 rounded-xl border border-slate-200 flex items-center text-xs font-bold">
+ <div class="bg-slate-100 p-1 rounded-xl border border-slate-200 flex items-center text-xs font-bold">
                         <button onclick="changeLanguage('ar')" id="btn-ar" class="px-2.5 py-1.5 rounded-lg bg-white text-brand-700 shadow-sm transition">العربية</button>
                         <button onclick="changeLanguage('fr')" id="btn-fr" class="px-2.5 py-1.5 rounded-lg text-slate-600 hover:text-brand-700 transition">Français</button>
                         <button onclick="changeLanguage('en')" id="btn-en" class="px-2.5 py-1.5 rounded-lg text-slate-600 hover:text-brand-700 transition">English</button>
@@ -186,7 +186,7 @@
         <!-- Section 8: RÉSEAU D'ENTRAIDE -->
         <section id="entraide" class="scroll-mt-24 section-block">
             <div class="flex items-center space-x-3 space-x-reverse mb-6">
-<div class="w-10 h-10 bg-sky-100 text-sky-700 rounded-xl flex items-center justify-center font-bold text-lg"><i class="fa-solid fa-hands-holding-child"></i></div>
+ <div class="w-10 h-10 bg-sky-100 text-sky-700 rounded-xl flex items-center justify-center font-bold text-lg"><i class="fa-solid fa-hands-holding-child"></i></div>
                 <div>
                     <h2 class="text-2xl font-black text-slate-900" id="sec-8-title">شبكة التضامن والتعاون الأخوي</h2>
                     <p class="text-xs text-slate-500" id="sec-8-desc">التنقل المشترك بين الولايات، تبادل المراجع، والدعم الأكاديمي</p>
@@ -334,7 +334,7 @@
                 services: [
                     { name: "Service Scolarité & Inscription", desc: "Délivrance des certificats de scolarité, relevés de notes et inscriptions.", icon: "fa-id-card", tag: "Admin" },
                     { name: "Bibliothèque Centrale", desc: "Ouvrages d'ingénierie, projets de fin d'études (PFE) et espace numérique.", icon: "fa-book-open", tag: "Bibliothèque" },
-{ name: "Procédures & Recours Administratifs", desc: "Étapes de justification d'absence, congé académique et requêtes.", icon: "fa-file-signature", tag: "Procédures" }
+ { name: "Procédures & Recours Administratifs", desc: "Étapes de justification d'absence, congé académique et requêtes.", icon: "fa-file-signature", tag: "Procédures" }
                 ],
                 quotidien: [
                     { name: "Restaurants & Cafés à Proximité", desc: "Sélection de 5 fast-foods et cafés très fréquentés près du portail.", icon: "fa-utensils", tag: "Restauration" },
@@ -419,7 +419,7 @@
                 ],
                 transport: [
                     { name: "ETUSA & University Bus Routes", desc: "Bus lines connecting the school to metro and train stations.", icon: "fa-bus-simple", tag: "Bus" },
-{ name: "Shared Taxi Hubs", desc: "Taxi departure points to Kouba, Harrach, and Birkhadem with fares.", icon: "fa-taxi", tag: "Taxi" },
+ { name: "Shared Taxi Hubs", desc: "Taxi departure points to Kouba, Harrach, and Birkhadem with fares.", icon: "fa-taxi", tag: "Taxi" },
                     { name: "Traffic Bypass Routes", desc: "Optimal travel routes to avoid peak hour traffic jams morning and evening.", icon: "fa-map-signs", tag: "Transit" }
                 ],
                 cite: [
@@ -542,7 +542,7 @@
                 const title = card.querySelector('.card-title').innerText.toLowerCase();
                 const desc = card.querySelector('.card-desc').innerText.toLowerCase();
                 if (title.includes(input) || desc.includes(input)) {
-card.style.display = "flex";
+ card.style.display = "flex";
                 } else {
                     card.style.display = "none";
                 }
